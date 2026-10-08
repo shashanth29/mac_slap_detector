@@ -8,7 +8,7 @@ with IMU() as imu:
     print("2. Pipeline connected! Waiting for first data block from sensor...")
 
     while True:
-     for data in imu.accelerometer:
+     for data in imu.read_accel():
 
          print("3. Data packet received!")
 
